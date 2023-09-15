@@ -1,0 +1,16 @@
+{
+  "name": "GraphQL PWA Demo",
+  "short_name": "Moonshot Demo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/static/images/logo.svg",
+      "type": "image/png",
+      "sizes": "300x300"
+    }
+  ]
+}

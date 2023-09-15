@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    {% block head %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    {% block styles %}
+    <!-- Bootstrap CSS -->
+    {{ bootstrap.load_css() }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}" />
+    <style>
+      body {
+        padding: 30px;
+        font-family: Arial, sans-serif;
+        background: repeating-linear-gradient(45deg, #e0e0e0, #e0e0e0 25px, #ffffff 25px, #ffffff 50px);
+      }
+      .content {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 1000px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+    {% endblock %}
+
+    <title>GraphQL PWA</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="content">
+      <div class="container h-100 d-flex flex-column">
+        <!-- Header -->
+        {% from 'header.html' import render_header %} {{ render_header() }}
+
+        <!-- Your page content -->
+        {% block content %}{% endblock %}
+
+        <!-- Footer -->
+        {% from 'footer.html' import render_footer %} {{ render_footer() }}
+      </div>
+
+      {% block scripts %} {{ bootstrap.load_js() }}
+      <script type="module" src="{{ url_for('static', filename='js/index.js') }}"></script>
+      {% endblock %}
+    </div>
+  </body>
+</html>

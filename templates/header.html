@@ -1,0 +1,13 @@
+{% from 'bootstrap5/nav.html' import render_nav_item %} {% macro render_header() -%}
+<header
+  class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+>
+  <div class="container d-flex flex-wrap align-items-center justify-content-center gap-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-center">
+      <a href="/" class="d-flex align-items-center text-decoration-none">
+        <span class="display-6 fw-bold text-center mt-2">Flask GraphQL PWA Boilerplate</span>
+      </a>
+    </div>
+  </div>
+</header>
+{%- endmacro %}

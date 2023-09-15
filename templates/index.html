@@ -1,0 +1,7 @@
+{% extends "layout.html" %} {% block content %}
+<div id="loader" class="text-center d-flex flex-column align-items-center my-5">
+  <div class="spinner-border" role="status"></div>
+  <span class="sr-only mt-2 fs-4">Loading...</span>
+  <b>⏳ This will always be here ⌛️</b>
+</div>
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}
