@@ -1,12 +1,10 @@
-<h1 align="center">Flask GraphQL PWA Boilerplate</h1>
+<h1 align="center">Flask GraphQL PWA Boilerplate 🚀📦</h1>
 
-## Table of Contents
+### Table of Contents
 
 - [📢 What is _Flask GraphQL PWA Boilerplate_?](#-what-is-flask-graphql-pwa-boilerplate)
 - [⚙️ Execution](#%EF%B8%8F-execution)
 - [⭐ Current Features](#-current-features)
-
-</br>
 
 ## 📢 What is _Flask GraphQL PWA Boilerplate_?
 
@@ -76,9 +74,7 @@ Regarding the PWA features, the following are included, and you can install the 
 
 See browser support for PWAs [here](https://caniuse.com/serviceworkers).
 
-</br>
 <hr>
-</br>
 
 <div align="center">
     <span>Made with ❤️ by <b><a href="https://www.linkedin.com/in/jalvarezz13/">jalvarezz13</a></b></span>
